@@ -3,7 +3,7 @@ This repository is a simmple RESTful API for managing todo list, built using go.
 
 ## docker-compose
 This repository uses docker-compose for easily configurating optimal environment.
-according to the following command, please configurate optimal environment.
+according to the following command, please configurate environment of database etc.
 
 ```ssh
 docker-compose up --build
