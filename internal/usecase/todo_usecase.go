@@ -13,8 +13,8 @@ type TodoUsecase struct {
 
 func New(
 	tr *repository.TodoRepository,
-) (*TodoUsecase, error) {
-	return &TodoUsecase{tr}, nil
+) *TodoUsecase {
+	return &TodoUsecase{tr}
 }
 
 func (tu *TodoUsecase) GetTodos() ([]entity.Todo, error) {
