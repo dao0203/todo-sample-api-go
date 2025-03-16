@@ -3,6 +3,9 @@ package main
 import (
 	"fmt"
 	"net/http"
+
+	"github.com/dao0203/todo-sample/config"
+	"github.com/dao0203/todo-sample/internal/app"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
@@ -10,7 +13,10 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", handler)
-	fmt.Println("Server started at :8080")
-	http.ListenAndServe(":8080", nil)
+	cfg, err := config.New()
+	if err != nil {
+		panic(err)
+	}
+
+	app.Run(cfg)
 }

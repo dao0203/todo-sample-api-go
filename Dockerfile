@@ -1,5 +1,5 @@
 # ベースイメージ
-FROM golang:1.22
+FROM golang:1.23
 
 # 作業ディレクトリを設定
 WORKDIR /app
@@ -14,4 +14,4 @@ RUN go mod tidy
 EXPOSE 8080
 
 # アプリケーション実行
-CMD ["go", "run", "app/main.go"]
+CMD ["go", "run", "cmd/app/main.go"]
