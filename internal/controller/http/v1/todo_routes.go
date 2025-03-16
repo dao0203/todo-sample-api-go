@@ -2,8 +2,7 @@ package v1
 
 import (
 	"github.com/dao0203/todo-sample/internal/usecase"
-	"github.com/gofiber/fiber"
-	"github.com/gofiber/fiber/v3"
+	fiber "github.com/gofiber/fiber/v3/"
 )
 
 type TodoRoutes struct {

@@ -1,5 +1,9 @@
 package httpserver
 
+import (
+	"net"
+)
+
 // Option -.
 type Option func(*Server)
 

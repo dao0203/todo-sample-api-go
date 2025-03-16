@@ -7,13 +7,15 @@ toolchain go1.23.7
 require github.com/go-sql-driver/mysql v1.9.0 // for mysql
 
 require (
+	github.com/caarlos0/env/v11 v11.3.1
+	github.com/gofiber/fiber v1.14.6
+	github.com/gofiber/fiber/v3 v3.0.0-beta.4
+)
+
+require (
 	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/andybalholm/brotli v1.1.1 // indirect
-	github.com/caarlos0/env/v11 v11.3.1 // indirect
-	github.com/danielgtaylor/huma/v2 v2.31.0 // indirect
 	github.com/fxamacker/cbor/v2 v2.7.0 // indirect
-	github.com/gofiber/fiber v1.14.6 // indirect
-	github.com/gofiber/fiber/v3 v3.0.0-beta.4 // indirect
 	github.com/gofiber/schema v1.2.0 // indirect
 	github.com/gofiber/utils v0.0.10 // indirect
 	github.com/gofiber/utils/v2 v2.0.0-beta.7 // indirect

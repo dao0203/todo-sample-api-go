@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/gofiber/fiber"
+	"github.com/gofiber/fiber/v3"
 )
 
 const (
@@ -40,7 +40,6 @@ func New(opts ...Option) *Server {
 	}
 
 	app := fiber.New(fiber.Config{
-		Prefork:      false,
 		ReadTimeout:  s.readTimeout,
 		WriteTimeout: s.writeTimeout,
 		JSONDecoder:  json.Unmarshal,
